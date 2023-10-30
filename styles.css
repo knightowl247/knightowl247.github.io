@@ -41,6 +41,7 @@ body {
   font-weight: bold;
   font-size: 5vw;
   margin: 3rem;
+  text-shadow: 2px 2px black;
   z-index: 1;
 }
 
@@ -94,6 +95,7 @@ hr {
 
 h1 {
   color: #ce5a67;
+  font-size: 3rem;
 }
 
 .footer {
@@ -109,8 +111,10 @@ h1 {
 }
 
 iframe {
-  width: 50%;
-  aspect-ratio: 2;
+  width: 60%;
+  aspect-ratio: 1.5;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
 }
 
 .full {
@@ -138,4 +142,16 @@ a {
 
 a:hover {
   color: #ce5a67;
+}
+
+.resume {
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+  aspect-ratio: 1;
+}
+
+h1,
+h2,
+p {
+  text-shadow: 2px 2px black;
 }
