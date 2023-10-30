@@ -1,0 +1,141 @@
+/* GLOBAL STYLES */
+body {
+  padding: 0;
+  margin: 0;
+  background: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  aspect-ratio: 2;
+  position: relative;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+  background: url("./images/code_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #333, rgba(0, 0, 0, 0) 150px),
+    linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 250px);
+}
+
+.typing-demo {
+  width: 17ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  color: #ce5a67;
+  font-weight: bold;
+  font-size: 5vw;
+  margin: 3rem;
+  z-index: 1;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 2rem;
+  margin-bottom: 0.5rem;
+  float: left;
+  box-shadow: 10px 10px;
+}
+
+p {
+  display: inline;
+  color: white;
+}
+
+#intro {
+  width: 100%;
+}
+
+#intro > div {
+  margin: 20px;
+}
+
+hr {
+  width: 80%;
+}
+
+.mag-left {
+  margin-left: 3rem;
+}
+
+.mag-right {
+  margin-right: 3rem;
+}
+
+h1 {
+  color: #ce5a67;
+}
+
+.footer {
+  width: 100%;
+  padding: 30px 0;
+  background-color: black;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin-top: 0;
+}
+
+iframe {
+  width: 50%;
+  aspect-ratio: 2;
+}
+
+.full {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h2 {
+  color: #a0e9ff;
+  margin: 5px;
+}
+
+span {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #ce5a67;
+}
