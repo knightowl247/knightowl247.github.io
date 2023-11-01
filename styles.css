@@ -31,7 +31,7 @@ body {
 }
 
 .typing-demo {
-  width: 17ch;
+  width: 17.15ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -63,6 +63,7 @@ body {
   border-radius: 50%;
   object-fit: cover;
   margin: 2rem;
+  margin-left: 5%;
   margin-bottom: 0.5rem;
   float: left;
   box-shadow: 10px 10px;
@@ -78,7 +79,8 @@ p {
 }
 
 #intro > div {
-  margin: 20px;
+  margin: 0 5%;
+  margin-bottom: 35px;
 }
 
 hr {
@@ -114,7 +116,7 @@ h1 {
 }
 
 iframe {
-  width: 80%;
+  width: 90%;
   aspect-ratio: 1.5;
   border-radius: 20px;
   box-shadow: 10px 10px;
@@ -198,4 +200,27 @@ p {
 .description {
   height: 100px;
   overflow: scroll;
+}
+
+.mag-5 {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#contact {
+  align-items: flex-start;
+}
+
+#contact > h1 {
+  align-self: center;
+}
+
+#portfolio > h2 {
+  align-self: flex-start;
+  margin-bottom: 30px;
+  color: #a0e9ff;
+}
+
+#carouselExampleCaptions {
+  width: 90%;
 }
