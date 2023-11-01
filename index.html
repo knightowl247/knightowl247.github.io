@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>William Huang's Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -19,7 +25,7 @@
         alt="Profile Picture"
       />
       <div>
-        <h1 style="margin-top: 70px">Hello World</h1>
+        <h1 class="hello-world">Hello World</h1>
         <br />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -70,64 +76,98 @@
 
     <div class="flex-column full">
       <h1 class="mag-left mag-right">Portfolio</h1>
-      <h2 class="mag-left mag-right">CloakClub</h2>
-      <iframe
-        src="https://youtube.com/embed/hTFKgRKvu34?si=FSvKs-rGvcdvEk1K"
-        frameborder="0"
-        class="mag-left mag-right"
-      ></iframe>
-      <p class="mag-left mag-right">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
 
-      <h2 class="mag-left mag-right">DuckCapture</h2>
-      <iframe
-        src="https://www.youtube.com/embed/q3cymoB3Yc4?si=QWOhSYebWj15wzPh"
-        frameborder="0"
-        class="mag-left mag-right"
-      ></iframe>
-      <p class="mag-left mag-right">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-
-      <h2 class="mag-left mag-right">Amazon Review Scrapper</h2>
-      <iframe
-        src="https://www.youtube.com/embed/-WfNToOe6tU?si=cbdf66VzSOnnbHkO"
-        frameborder="0"
-        class="mag-left mag-right"
-      ></iframe>
-      <p class="mag-left mag-right">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-
-      <h2 class="mag-left mag-right">Guesser.ai</h2>
-      <iframe
-        src="https://www.youtube.com/embed/mOGd-CM2ebM?si=USH70aqQMaecoBXx"
-        frameborder="0"
-        class="mag-left mag-right"
-      ></iframe>
-      <p class="mag-left mag-right">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-
-      <h2 class="mag-left mag-right">StudyMates</h2>
-      <iframe
-        src="https://www.youtube.com/embed/1opHyOrhGKE?si=oS51asjXF4GvSiyj"
-        frameborder="0"
-        class="mag-left mag-right"
-      ></iframe>
-      <p class="mag-left mag-right">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-    </div>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        style="width: 80%;"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2>CloakClub</h2>
+            <iframe
+              src="https://youtube.com/embed/hTFKgRKvu34?si=FSvKs-rGvcdvEk1K"
+              frameborder="0"
+            ></iframe>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h2>DuckCapture</h2>
+            <iframe
+              src="https://www.youtube.com/embed/q3cymoB3Yc4?si=QWOhSYebWj15wzPh"
+              frameborder="0"
+            ></iframe>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h2>Amazon Review Scrapper</h2>
+            <iframe
+              src="https://www.youtube.com/embed/-WfNToOe6tU?si=cbdf66VzSOnnbHkO"
+              frameborder="0"
+            ></iframe>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h2>Guesser.ai</h2>
+            <iframe
+              src="https://www.youtube.com/embed/mOGd-CM2ebM?si=USH70aqQMaecoBXx"
+              frameborder="0"
+            ></iframe>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h2>StudyMates</h2>
+            <iframe
+              src="https://www.youtube.com/embed/1opHyOrhGKE?si=oS51asjXF4GvSiyj"
+              frameborder="0"
+            ></iframe>
+            <div class="description">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+      </div>
 
     <div class="footer">
       <p>&copy; 2003-2023 William Huang</p>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
