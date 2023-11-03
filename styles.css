@@ -12,6 +12,7 @@ body {
 .wrapper {
   width: 100%;
   aspect-ratio: 2;
+  min-height: 500px;
   position: relative;
   /*This part is important for centering*/
   display: grid;
@@ -30,19 +31,23 @@ body {
     linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0) 250px);
 }
 
+.dynamic-text {
+  font-size: max(5vw, 2rem);
+  z-index: 1;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
 .typing-demo {
-  width: 17.15ch;
+  width: 10.2ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid;
   font-family: monospace;
   color: #ce5a67;
-  font-weight: bold;
-  font-size: 5vw;
-  margin: 3rem;
   text-shadow: 2px 2px black;
-  z-index: 1;
 }
 
 @keyframes typing {
@@ -126,6 +131,7 @@ iframe {
 .carousel-item > iframe {
   width: 100%;
   aspect-ratio: 2;
+  max-height: 450px;
   box-shadow: none;
   margin-bottom: 10px;
 }
@@ -223,4 +229,65 @@ p {
 
 #carouselExampleCaptions {
   width: 90%;
+}
+
+.animation-element {
+  opacity: 0;
+  transform: translateX(20px) translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.animate {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+}
+
+.navbar {
+  padding: 20px;
+  width: 100%;
+}
+.navbar-nav {
+  text-align: center; /* Center the links */
+}
+.nav-item {
+  margin: 0 0.5rem; /* Add margin between the links */
+}
+
+.nav-link {
+  color: white;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+
+a.nav-link:hover,
+.navbar-brand:hover {
+  color: #ce5a67 !important;
+}
+
+.navbar-brand:focus,
+a.nav-link:focus {
+  color: white;
+}
+
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-item {
+  text-align: end;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+  border: 0; /* Optionally, you can add a border */
+}
+
+.navbar-toggler {
+  box-shadow: none !important;
 }

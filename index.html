@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>William Huang's Portfolio</title>
+    <title>William Huang</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,11 +14,44 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="typing-demo">The Future Is Now</div>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="./index.html">William Huang</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon navbar-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#intro">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="flex-column">
+        <h1 class="dynamic-text">Building Tomorrow</h1>
+        <div class="typing-demo dynamic-text">Bit By Bit</div>
+      </div>
       <div class="gradient"></div>
     </div>
 
-    <div id="intro">
+    <div class="animation-element" id="intro">
       <img
         id="profile-picture"
         src="./images/profile_picture.jpg"
@@ -28,9 +61,21 @@
         <h1 class="hello-world">Hello World</h1>
         <br />
         <p>
-          Hi y'all! My name is William Huang and I currently attend the
-          University of Maryland and will graduate this coming Spring. I am
-          majoring in computer science and minoring in statistics.
+          Hi y'all! My name is William Huang. I am majoring in Computer Science
+          and minoring in Statistics and will be graudating from the University
+          of Maryland this coming Spring semester.
+          <br />
+          <br />
+          I have professional experiece interning at
+          <b>Amazon Web Services (AWS)</b> as a software developer. I've also
+          worked as a contractor for government organizations and I have
+          developed a fair share of my own applications on the side. It's my
+          passion to build new things, and I look forward to continue to build
+          applications that bring impact to the world.
+          <br />
+          <br />
+          ***Currently looking for a new grad software development position.
+          Please feel free to ping me with any opportunities you may have!***
         </p>
       </div>
     </div>
@@ -52,9 +97,12 @@
       </h2>
     </div>
 
-    <div class="flex-column full">
+    <div class="flex-column full" id="resume">
       <h1 class="mag-left mag-right">Resume</h1>
-      <iframe class="mag-left mag-right resume" src="resume.pdf"></iframe>
+      <iframe
+        class="mag-left mag-right resume"
+        src="https://drive.google.com/file/d/1rfuQz9V68GUQrfbMQGjWyrKmlod6n0YG/preview?"
+      ></iframe>
     </div>
 
     <div id="portfolio" class="flex-column full">
@@ -134,15 +182,36 @@
             </div>
           </div>
           <div class="carousel-item">
-            <h2>Amazon Review Scrapper</h2>
+            <h2>Amazon Review Evaluator</h2>
             <iframe
               src="https://www.youtube.com/embed/-WfNToOe6tU?si=cbdf66VzSOnnbHkO"
               allow="fullscreen;"
             ></iframe>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                This project is from the first Hackathon that I joined, which
+                was sponsored by Northrop Grumman. The challenge for the
+                Hackathon was to build an application using a web scrapper, or
+                create an application that utilized open vision. Together, with
+                4 other friends, we decided to build a web scrapper application
+                that scrapped Amazon reviews and utilized OpenAI's Da Vinci AI
+                model to determine whether reviews were fraudulent or not.
+                <br />
+                <br />
+                While our team did not win in this event, I still gained some
+                valuable skills by participating in this event. In terms of
+                technical skills, I learned how to use various web-scraping
+                packages, such as BeautifulSoup. Additionally, I strengthened my
+                frontend development skills. I also learned how to use Flask to
+                create API endpoints in Python.
+                <br />
+                <br />
+                In terms of soft skills, as team leader of the group, I
+                organized meetings, learned to effectively facilitate
+                conversations, and broke down objectives so our team could work
+                efficiently. Being in the competition also taught me how to
+                manage time with a tight deadline and present work in a clean
+                and concise manner.
               </p>
             </div>
           </div>
@@ -154,8 +223,22 @@
             ></iframe>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                The following project was from the Bitcamp Hackathon, one of the
+                largest Hackathon events hosted at the Xfinity Center at the
+                University of Maryland. Cumulatively, over 400 teams competed in
+                a variety of categories. Together, with a friend, we developed a
+                game called Guesser.ai. This game generated random AI images
+                using OpenAI's Dall-E model, and users had to guess the prompt
+                that generated the images. With this application, I was able to
+                win in a Hackathon for the first time, winning the best
+                gamfication hack award.
+                <br />
+                <br />
+                The app was created using Swift's SwiftUI. The OpenAI API that
+                generated AI images was accessed using Python, so Flask was used
+                to create an endpoint for the Python script that could be called
+                on Swift. The rest was all blood, sweat and tears, but
+                fortunately, it all paid off.
               </p>
             </div>
           </div>
@@ -167,8 +250,40 @@
             ></iframe>
             <div class="description">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                This is a project that I did for a capstone project for one of
+                my university classes. The basic idea behind the app was to
+                allow students to find study groups for their courses. For this
+                project, I used Swift's SwiftUI for frontend development, and
+                Firebase to store the various study groups and metadata related
+                to users.
+                <br />
+                <br />
+                With this project, I learned how to build apps with Apple's new
+                SwiftUI framework. This project also allowed me to develop my
+                UI/UX skills, with this being one of my most impressive projects
+                in terms of UI design.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <h2>StudyMates</h2>
+            <iframe
+              src="https://www.youtube.com/embed/WEWfLW11LbQ?si=HHfDSuZFOC3lsp0z"
+              allow="fullscreen;"
+            ></iframe>
+            <div class="description">
+              <p>
+                This is a project that I am currently working on right now with
+                a friend. In a nutshell, it's a specialized kick starter site
+                for manga and other graphic novels.
+                <br />
+                <br />
+                Although, I worked on all aspects of the projects, I mainly
+                focused on frontend development. For this project, I used the
+                React framework to build a modern and responsive site that looks
+                beautiful on both desktop and mobile. Client-side and
+                server-side logic was built using JavaScript and the backend
+                utilizes PostgreSQL.
               </p>
             </div>
           </div>
@@ -206,6 +321,12 @@
             data-bs-slide-to="4"
             aria-label="Slide 5"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
         </div>
       </div>
     </div>
@@ -217,5 +338,6 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
